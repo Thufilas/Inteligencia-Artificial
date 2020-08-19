@@ -1,0 +1,129 @@
+# EXERCICIO 1
+
+#print("teste")
+
+num1 = input('Digite o Primeiro Valor: ')
+
+num2 = input('Digite o Segundo Valor: ')
+
+soma = int(num1) + int(num2)
+
+print("A soma dos valores que voce digitou é: ", str(soma))
+
+# EXERCICIO 2
+
+nota1 = input('Digite a nota do Primeiro Bimestre: ')
+
+nota2 = input('Digite a nota do Segundo Bimestre: ')
+
+nota3 = input('Digite a nota do Terceiro Bimestre: ')
+
+nota4 = input('Digite a nota do Quarto Bimestre: ')
+
+media = (int(nota1) + int(nota2) + int(nota3) + int(nota4))/int(4)
+
+print("A média final é: ", str(media))
+
+# EXERCICIO 3
+
+valor = input('Digite o valor em metros: ')
+
+conversao = float(valor)*100
+
+print("O valor em centimetros é: ", str(conversao))
+
+# EXERCICIO 4
+
+valor = input('Digite o valor em Graus Fahrenheit: ')
+
+conversao = float(float(valor) - 32) / 1.8
+
+print("O valor em Graus Celcius é: ", str(conversao))
+
+# EXERCICIO 5
+
+num1 = input('Digite o Primeiro Valor: ')
+
+num2 = input('Digite o Segundo Valor: ')
+
+
+if int(num1) > int(num2):
+    print('O numero maior é: ', int(num1))
+
+elif int(num2) > int(num1):
+    print('O numero maior é: ', int(num2))
+
+
+num3 = input('Digite um valor: ')
+
+if int(num3) > 0:
+    print('O numero é positivo.')
+
+else:
+    print('O numero é negativo.')
+
+# EXERCICIO 6
+
+sexo = str(input("Digite o seu sexo: "))
+
+if sexo[:1].upper() == 'F':
+    print("Voce é do sexo Feminino.")
+elif sexo[:1].upper() == 'M':
+    print("Voce é do sexo Masculino.")
+else:
+    print("Sexo invalido.")
+
+
+nota1 = input('Digite a nota do Primeiro Bimestre: ')
+
+nota2 = input('Digite a nota do Segundo Bimestre: ')
+
+media = (int(nota1) + int(nota2))/int(2)
+
+if media == 10:
+    print("Voce Foi APROVADO com distinçao, com uma media de:", float(media))
+elif media >= 7:
+   print("Voce Foi APROVADO, com uma media de:", float(media))
+elif media <= 7:
+    print("Voce Foi REPROVADO, com uma media de:", float(media))
+
+
+# EXERCICIO  7
+
+quantidade = int(input('Digite quantos numeros voce quer: '))
+
+pares = 0
+
+for x in range(quantidade):
+    n = int(input('Digite um numero:'))
+    if (n % 2 == 0):
+        pares = pares + 1
+
+print(pares, 'Numeros pares')
+print((quantidade - pares), 'numeros impares')
+
+# EXERCICIO 8
+
+numero = int(input('Digite um valor: '))
+
+primo = 0
+
+for x in range(1, numero+1):
+    if numero % x == 0:
+        primo = primo+1
+
+if primo <= 2:
+    print('Este numero é primo')
+else:
+    print('Este numero nao é primo')
+
+# EXERCICIO 9
+
+numero = int(input('Digite um valor: '))
+
+fatorial = 0
+
+for x in range(1, numero+1):
+    fatorial = numero*x
+
+print('O fatorial é:', int(fatorial))
